@@ -1,11 +1,19 @@
 h1 {
   font-family: 'Chicle', cursive;
-  font-size: 5em;
+  font-size: 9em;
   color: #343434;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+html {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 h2 {
   font-family: 'Galdeano', sans-serif;
-  font-size: 5em;
+  font-size: 2em;
   color: #343434;
 }
