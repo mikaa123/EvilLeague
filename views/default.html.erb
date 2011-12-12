@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>The Evil League to save Community</title>
+  <meta name="description" content="The Evil League to save Community">
   <link href='http://fonts.googleapis.com/css?family=Chicle' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Galdeano' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
@@ -22,7 +21,7 @@
 <% else %>
 <form id="join" method="post" action="/add">
   <% if flash[:error] %>
-  <p> <%= flash[:error] %>
+  <p id="error"><%= flash[:error] %></p>
   <% end %>
   <input type="text" placeholder="Your evil name" name="name" id="name">
   <input type="submit" value="Join" id="submit">
