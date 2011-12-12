@@ -16,10 +16,16 @@
 <h1>The Evil League</h1>
 <h2>From all the timelines, this is clearly the darkest. Which is why I propose we commit to being evil.</h2>
 
-<form id="join">
+<% if flash[:notice] %>
+<p id="success"><%= flash[:notice] %></p>
+<% else %>
+<form id="join" method="post" action="/add">
+  <% if flash[:error] %>
+  <p> <%= flash[:error] %>
   <input type="text" placeholder="Enter your name" name="name" id="name">
   <input type="submit" value="Join" id="submit">
 </form>
+<% end %>
 
 <img class="separator" src="separator.png" />
 <div class="subtitle">What is our goal?</div>
