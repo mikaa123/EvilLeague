@@ -11,6 +11,17 @@ class EvilLeague < Sinatra::Base
     erb :'default.html', :layout => false
   end
 
+  post '/add' do |params|
+    evil_member = EvilUser.create(params)
+    if evil_member.save
+      flash[:notice] = "Welcome to the evil league, #{params[name]}!"
+    else
+      flash[:error] = "Sorry, try again."
+    end
+
+    redirect '/'
+  end
+
 end
 
 # Let's describe a member of the evil league
@@ -19,7 +30,7 @@ class EvilUser
 
   property :id, Serial
 
-  property :username, String,
+  property :name, String,
   :required => true,
   :unique => true,
   :length => 3..50
