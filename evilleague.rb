@@ -27,7 +27,7 @@ class EvilLeague < Sinatra::Base
 
     puts "HERE:"+evil_member
 
-    # redirect '/'
+    redirect '/'
   end
 
 end
