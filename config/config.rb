@@ -8,9 +8,9 @@ class EvilLeague
   configure :production do
     DataMapper::setup(:default, ENV['DATABASE_URL'])
 
-    get '/migratedb' do
-      puts ENV['DATABASE_URL']
-      DataMapper.auto_migrate!
-    end
+    # get '/migratedb' do
+    #   puts ENV['DATABASE_URL']
+    #   DataMapper.auto_migrate!
+    # end
   end
 end
