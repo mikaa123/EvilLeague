@@ -28,16 +28,33 @@ div.subtitle {
 	margin-bottom: 30px;
 }
 
+div.left-reg {
+	float: left;
+	width: 490px;
+}
+
+div.right-reg {
+	float: right;
+	width: 490px;
+	text-align: right;
+}
+
 div.left {
 	width: 560px;
 	float: left;
-	margin-left: 70px;
+}
+
+p {
+	margin: 0;
+  color: #343434;
+	font: 1.5em/33px 'Galdeano', sans-serif;
+	text-align: justify;
 }
 
 div.right {
-	float: left;
 	margin-left: 15px;
-	display: block;
+	width: 400px;
+	float: right;
 }
 
 
@@ -65,4 +82,5 @@ input#name {
 
 img.separator {
 	margin-top: 50px;
+
 }
