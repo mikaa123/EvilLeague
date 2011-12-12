@@ -12,6 +12,7 @@ class EvilLeague < Sinatra::Base
   end
 
   post '/add' do
+    puts "la"
     evil_member = EvilUser.new(params)
     if evil_member.save
       flash[:notice] = "Welcome to the evil league, #{params[name]}!"
@@ -19,7 +20,7 @@ class EvilLeague < Sinatra::Base
       flash[:error] = "Sorry, try again."
     end
 
-    p "HERE:"+evil_member
+    puts "HERE:"+evil_member
 
     redirect '/'
   end
