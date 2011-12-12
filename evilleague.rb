@@ -19,6 +19,8 @@ class EvilLeague < Sinatra::Base
       flash[:error] = "Sorry, try again."
     end
 
+    p "HERE:"+evil_member
+
     redirect '/'
   end
 
