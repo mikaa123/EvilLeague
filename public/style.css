@@ -13,9 +13,9 @@ div#counter {
     font-family: 'Galdeano', sans-serif;
     font-size: 2em;
     color: #99CCCC;
-	position: absolute;
-	top: 236px;
-	right: 526px;
+	position: relative;
+	top: -35px;
+	right: -27px;
 }
 
 html {
