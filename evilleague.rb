@@ -12,7 +12,8 @@ class EvilLeague < Sinatra::Base
   end
 
   post '/add' do |params|
-    evil_member = EvilUser.create(params)
+    p params
+    evil_member = EvilUser.new(params)
     if evil_member.save
       flash[:notice] = "Welcome to the evil league, #{params[name]}!"
     else
