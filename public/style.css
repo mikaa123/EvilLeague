@@ -25,7 +25,21 @@ div.subtitle {
   font-size: 1.5em;
   color: #343434;
 	margin-left: 50px;
+	margin-bottom: 30px;
 }
+
+div.left {
+	width: 560px;
+	float: left;
+	margin-left: 70px;
+}
+
+div.right {
+	float: left;
+	margin-left: 15px;
+	display: block;
+}
+
 
 form#join {
 	text-align: center;
