@@ -28,6 +28,12 @@ h2 {
   font-family: 'Galdeano', sans-serif;
   font-size: 2em;
   color: #343434;
+	margin-top: 0;
+}
+
+p#error {
+	text-align: center;
+	color: #ff3048;
 }
 
 div.subtitle {
@@ -59,6 +65,11 @@ p {
   color: #343434;
 	font: 1.5em/33px 'Galdeano', sans-serif;
 	text-align: justify;
+}
+
+p#success {
+	text-align: center;
+	color: #74bb60;
 }
 
 div.right {
