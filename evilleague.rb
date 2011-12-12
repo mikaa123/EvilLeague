@@ -22,8 +22,8 @@ class EvilUser
   property :username, String,
   :required => true,
   :unique => true,
-  :length => 3..50,
-  :format => /^[\w\d_\-]+$/
+  :length => 3..50
+  # :format => /^[\w\d_\-]+$/
 end
 
 require_relative 'config/config.rb'
