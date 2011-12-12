@@ -8,7 +8,7 @@ class EvilLeague < Sinatra::Base
 
   # Let's define a route for the home screen here
   get '/' do
-    erb :default, :layout => false
+    erb :'default.html', :layout => false
   end
 
 end
