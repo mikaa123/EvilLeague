@@ -26,4 +26,5 @@ class EvilUser
   :format => /^[\w\d_\-]+$/
 end
 
+require_relative 'config/config.rb'
 DataMapper.finalize
