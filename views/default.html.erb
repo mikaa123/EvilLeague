@@ -22,6 +22,7 @@
 <form id="join" method="post" action="/add">
   <% if flash[:error] %>
   <p> <%= flash[:error] %>
+  <% end %>
   <input type="text" placeholder="Enter your name" name="name" id="name">
   <input type="submit" value="Join" id="submit">
 </form>
