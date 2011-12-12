@@ -1,3 +1,5 @@
+/* @override http://evilleague.heroku.com/style.css */
+
 h1 {
   font-family: 'Chicle', cursive;
   font-size: 9em;
@@ -110,4 +112,15 @@ img.separator {
 	width: 77px;
 	position: absolute;
 	top: 124px;
+}
+
+#counter a, a:visited {
+	text-decoration: none;
+	color: #99CCCC;
+}
+
+#counter a:hover {
+	text-decoration: none;
+	color: #87d5f6;
+	font-weight: bold;
 }
