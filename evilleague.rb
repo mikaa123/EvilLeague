@@ -11,6 +11,10 @@ class EvilLeague < Sinatra::Base
     erb :'default.html', :layout => false
   end
 
+  get '/members' do
+    erb :'members.html', :layout => false
+  end
+
   post '/add' do
     evil_member = EvilUser.new(params)
 

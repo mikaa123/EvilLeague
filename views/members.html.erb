@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link href='http://fonts.googleapis.com/css?family=Chicle' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Galdeano' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1>The Evil League</h1>
+<div id="counter"><%= EvilUser.count %> members and counting...</div>
+<img class="separator" src="separator.png" />
+<div class="subtitle">Evil members of the evil league</div>
+
+<p><%= EvilUser.map { |member| member.name } * ', ' %></p>
+
+</body>
+</html>
