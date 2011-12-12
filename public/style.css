@@ -1,11 +1,21 @@
-/* @override http://evilleague.heroku.com/style.css */
-
 h1 {
   font-family: 'Chicle', cursive;
   font-size: 9em;
   color: #343434;
 	text-align: center;
 	margin-bottom: 0;
+	margin-top: 100px;
+}
+
+div#counter {
+
+	text-align: center;
+    font-family: 'Galdeano', sans-serif;
+    font-size: 2em;
+    color: #99CCCC;
+	position: absolute;
+	top: 236px;
+	right: 526px;
 }
 
 html {
