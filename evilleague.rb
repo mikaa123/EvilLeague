@@ -23,10 +23,6 @@ class EvilLeague < Sinatra::Base
     redirect '/'
   end
 
-  get '/migrate' do
-    DataMapper.auto_migrate!
-  end
-
 end
 
 # Let's describe a member of the evil league
