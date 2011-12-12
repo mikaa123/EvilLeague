@@ -1,3 +1,5 @@
+/* @override http://evilleague.heroku.com/style.css */
+
 h1 {
   font-family: 'Chicle', cursive;
   font-size: 9em;
@@ -16,4 +18,37 @@ h2 {
   font-family: 'Galdeano', sans-serif;
   font-size: 2em;
   color: #343434;
+}
+
+div.subtitle {
+	  font-family: 'Galdeano', sans-serif;
+  font-size: 1.5em;
+  color: #343434;
+	margin-left: 50px;
+}
+
+form#join {
+	text-align: center;
+	margin-top: 50px;
+}
+
+input#submit {
+	font-size: 1.7em;
+	padding:10px;
+	border:1px solid #;
+	text-align:center;
+
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	color: #6c6c6c;
+}
+
+input#name {
+	font-size: 2em;
+}
+
+img.separator {
+	margin-top: 50px;
 }
