@@ -13,12 +13,17 @@ class EvilLeague < Sinatra::Base
 
   post '/add' do
     puts "la"
+    puts params
     evil_member = EvilUser.new(params)
     if evil_member.save
+      puts "one"
       flash[:notice] = "Welcome to the evil league, #{params[name]}!"
     else
+      puts "two"
       flash[:error] = "Sorry, try again."
     end
+
+    puts "three"
 
     puts "HERE:"+evil_member
 
